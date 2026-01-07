@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" nonce="f8496f113f494ecd88452ef0306" src="//local.adguard.org?ts=1767634691785&amp;type=content-script&amp;dmn=s273vla.storage.yandex.net&amp;url=https%3A%2F%2Fs273vla.storage.yandex.net%2Frdisk%2Fb77c9e05cd077349ff4d8ad8f143d8a8d174bc78aee9fe29c37d52b4a5f149d7%2F695c3c81%2F0FYncCkgRhfiKFGq6IcA8BTrfZGROykH5JH5M7i2JdJD-bG5Xvw4uLByGeFrGC_BTyinTNjpU6B494GDBfOdtg%3D%3D%3Fuid%3D0%26filename%3Dindex.html%26disposition%3Dattachment%26hash%3D%252BqlDI59IJ9HxN1XfASZTnYemkdlxL949rngdjBmpcw26PSNwzbAHosQl6A2Hhq9gq%2FJ6bpmRyOJonT3VoXnDag%253D%253D%253A%2Findex.html%26limit%3D0%26content_type%3Dtext%252Fhtml%26owner_uid%3D304106411%26fsize%3D1435%26hid%3D3b67b44fbb04d474c221d1de1f2b7cb7%26media_type%3Ddevelopment%26tknv%3Dv3%26ts%3D647abaa376240%26s%3D03e95222e7a4e8ce6f0d8af291a908cdb650847c57fd2756274796a54a21cd26%26pb%3DU2FsdGVkX1_f2sVVFd_Osy-AbSwnQME0PRGahzU2pA2KbsEmGSs-MiebALG_2tBHvNeYk-5EVI3bj1uVABpS43VJ5biFGoGWlN1VJHAyIAs&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="f8496f113f494ecd88452ef0306" src="//local.adguard.org?ts=1767634691785&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Sansation", sans-serif;
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: #eeeeee;
+            padding: 10px 20px;
+        }
+        li:first-child {
+            padding-top: 20px;
+        }
+        li:last-child {
+            padding-bottom: 20px;
+        }
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        #showAdults {
+            background-color: lightskyblue;
+        }
+        #showChildren {
+            background-color: lightgreen;
+        }
+        #showAll {
+            background-color: lightseagreen;
+        }
+        #showSortedByAge {
+            background-color: rgb(255, 146, 162);
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="showAdults">Показать взрослых</button>
+    <button id="showChildren">Показать детей</button>
+    <button id="showAll">Показать всех людей</button>
+    <button id="showSortedByAge">Cортировать по возрасту</button>
+
+    <ul id="userList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
