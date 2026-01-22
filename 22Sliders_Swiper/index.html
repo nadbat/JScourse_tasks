@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/> -->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+    
+
+<style>
+
+    .sliderContainer {
+        max-width: 1200px;
+        align: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .swiperInfo {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center 
+    }
+
+
+    .swiperInfo .swiper-slide {
+        background-color:lightblue;
+        min-width:480px;
+        min-height: 240px;!important
+        max-width: 800px;
+        max-height: 400px;
+        border-radius: 40px;
+        transition: opacity 0.3s ease; 
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.9;
+}
+
+.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
+    opacity: 0.5;
+} 
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Сохраняем пропорции при растягивании изображения на весь размер div */
+        border-radius: 40px;
+    }
+
+    .swiper-pagination-bullet-active{
+        background: #7B61FF !important;
+        scale:1.4;
+    }
+
+    .paginationWithArrows .swiper-button-prev {
+        background-image: url(assets/ArrowLeft.svg) !important;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+
+    .paginationWithArrows{
+        display:flex;
+        height: 32px;
+        width:232px;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-pagination, .swiper-button-prev, .swiper-button-next {
+        position:relative;
+        height: 24px;
+        bottom: 0px;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        <!-- bottom: 0px; -->
+    }
+
+    .paginationWithArrows .swiper-button-next {
+        background-image: url(assets/ArrowRight.svg) !important;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+</style>
+    
+<body>
+    <div class="sliderContainer">
+        <div class="swiper swiperInfo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/unsplash_cqbLg3lZEpk.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/unsplash_g30P1zcOzXo.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/unsplash_s3EjzLRA4Yw.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/unsplash_xfngap_DToE.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/unsplash_YFFGkE3y4F8.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="paginationWithArrows"> 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</html>
