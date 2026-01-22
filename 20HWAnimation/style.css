@@ -1,0 +1,33 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position:absolute;
+}
+
+button {
+    margin-bottom: 50px;
+    margin-top:16px;
+    border: 1px solid red;
+    background-color: #fff;
+    color: red;
+    width:100px;
+    height:34px;
+}
+
+.button3 {
+    position: absolule; 
+    margin-top: 116px;
+}

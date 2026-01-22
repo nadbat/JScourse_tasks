@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #circle{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #box_rotating{
+            width: 30px;
+            height: 30px;
+            background-color: blueviolet;
+            margin: 100px;
+            position: absolute;
+        }
+
+        #box_moving{
+            width: 30px;
+            height: 30px;
+            background-color: chocolate;
+            margin: 100px;
+        }
+        
+
+        #box_scaling{
+            width: 30px;
+            height: 30px;
+            background-color: greenyellow;
+            margin: 100px;
+        }
+        
+    </style>
+</head>  
+<body>
+    <div id="circle"></div>
+    <div id="box_moving"></div>
+    <div id="box_scaling"></div>
+    <div id="box_rotating"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/TextPlugin.min.js"></script>
+
+    <script src="script.js"></script>
+</html>

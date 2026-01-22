@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #username {
+        border: 1pt ridge rgba(50, 61, 220, 0.6);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        }
+        #output {
+        margin-top: 20px;   
+        }
+    </style>
+    <script type="text/javascript" nonce="27247b35f12b4b2baeab96d2a6b" src="//local.adguard.org?ts=1765875249396&amp;type=content-script&amp;dmn=s522klg.storage.yandex.net&amp;url=https%3A%2F%2Fs522klg.storage.yandex.net%2Frdisk%2Fc00e01cc3529ad2ac721f5e3b8fb4b44f8f81b492a0d2a6341557a59bffb1d91%2F6941717c%2F0FYncCkgRhfiKFGq6IcA8MN5Amuw73DvjXX0uy-4P219Z9xcgU4YIHWnNpZKR74Q0ICzmnpkUvOAExyKI6G-6w%3D%3D%3Fuid%3D0%26filename%3Dindex.html%26disposition%3Dattachment%26hash%3DV513mABzH4y4pPpxsZDyNNvOeBZ6h3sy5uthFDUDvBR%2FvkmP%252BLxsHlMzRp6saogtq%2FJ6bpmRyOJonT3VoXnDag%253D%253D%253A%2Findex.html%26limit%3D0%26content_type%3Dtext%252Fhtml%26owner_uid%3D304106411%26fsize%3D576%26hid%3D1341d83870a666b7b89f79e1571a5d4e%26media_type%3Ddevelopment%26tknv%3Dv3%26ts%3D64612d5e25700%26s%3D6b9412db3bef00e32e5d02b03480e6cf910bdb194ec0805ba491d8e9bc55a5f9%26pb%3DU2FsdGVkX1_yx8hubgmdBHUEowBawCKCW5girY7Cz8iWnSQcpsQCagWiguyOQvi0vQIu9DP0ROw03jq3t2YyAZEvhuN6RqLRXE0dhRYWBqc&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="27247b35f12b4b2baeab96d2a6b" src="//local.adguard.org?ts=1765875249396&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
+</head>
+<body>
+    <form id="userform" class="form">
+        <label for="username">Введите имя:</label>
+        <input type="text" id="username" />
+        <button type="button" id="saveBtn" class="btn">Сохранить</button>
+    </form>
+    <button id="showBtn" class="btn">Показать имя</button>
+    <button id="deleteBtn" class="btn">Удалить имя</button>
+    <div id="output"></div>
+    <div id="counter">Количество сохраненных имен на сайте:</div>
+    <script src="script.js"></script>
+</html>
